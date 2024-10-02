@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: #21252B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,14 +45,18 @@ body {
 }
 
 .calendar-days div {
-    background-color: #1E1E1E;
+    background-color: #282C34;
     padding: 1.5rem;
     font-size: 2rem;
     border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .current-day {
-    background-color: #282C34;
+    background-color: #282C34 !important;
+    color: white;
+    font-weight: bold;
+    border: 5px solid #EACD95;
 }
 
 .calendar-days div:hover {
