@@ -30,7 +30,7 @@ body {
 .days-of-week {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     width: 100%;
     text-align: center;
@@ -47,9 +47,14 @@ body {
 .calendar-days div {
     background-color: #282C34;
     padding: 1.5rem;
-    font-size: 4rem;
+    font-size: 4rem; /* Aumenta o tamanho da fonte dos dias */
     border-radius: 10px;
     transition: background-color 0.3s;
+}
+
+.empty {
+    visibility: hidden; /* Esconde os blocos vazios antes do primeiro dia do mês */
+    background-color: transparent;
 }
 
 .current-day {
@@ -61,4 +66,8 @@ body {
 
 .calendar-days div:hover {
     background-color: #333;
+}
+
+.saturday, .sunday {
+    opacity: 0.1;
 }
